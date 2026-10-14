@@ -1,0 +1,54 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+h1, h2, h3, h4 { line-height: 1.35; margin: 1.6em 0 .6em; font-weight: 600; color: #e6e9ef; }
+h1 { font-size: 1.75rem; margin-top: .4em; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.12rem; }
+h4 { font-size: 1rem; color: var(--dim); }
+p { margin: .7em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+strong { color: #eef0f4; font-weight: 600; }
+small { color: var(--dim); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+ul, ol { padding-left: 1.4em; margin: .6em 0; }
+li { margin: .25em 0; }
+code {
+  font-family: var(--mono);
+  font-size: .88em;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: .05em .35em;
+  color: #c9d1e3;
+  overflow-wrap: anywhere;
+}
+pre code { background: none; border: 0; padding: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+::selection { background: rgba(122, 162, 247, .3); }
+table { border-collapse: collapse; width: 100%; }
+img, svg { max-width: 100%; }
+[hidden] { display: none !important; }
+
+/* scrollbars */
+* { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 10px; border: 2px solid var(--bg); }
+::-webkit-scrollbar-track { background: transparent; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.mono { font-family: var(--mono); }
+.dim { color: var(--dim); }
+.faint { color: var(--faint); }
+.nowrap { white-space: nowrap; }

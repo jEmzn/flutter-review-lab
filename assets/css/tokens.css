@@ -1,0 +1,74 @@
+/* Design tokens — ธีมมืดโทนเดียว ไม่ใช้เงา แยกชั้นด้วยเส้นขอบและระดับพื้นผิว */
+:root {
+  color-scheme: dark;
+
+  --bg: #12141a;
+  --surface: #181b22;
+  --surface-2: #1e222b;
+  --surface-3: #252a35;
+  --border: #2a2f3a;
+  --border-strong: #3a4150;
+
+  --text: #d7dae0;
+  --dim: #9aa1ad;
+  --faint: #6b7280;
+
+  --accent: #7aa2f7;
+  --accent-soft: rgba(122, 162, 247, 0.12);
+  --accent-line: rgba(122, 162, 247, 0.45);
+
+  /* ความหมาย */
+  --flash: #e0af68;         /* rebuild / มีการเปลี่ยนแปลง */
+  --flash-soft: rgba(224, 175, 104, 0.16);
+  --ok: #9ece6a;
+  --ok-soft: rgba(158, 206, 106, 0.13);
+  --err: #f7768e;
+  --err-soft: rgba(247, 118, 142, 0.13);
+  --supp: #bb9af7;          /* เสริม — ไม่อยู่ในตำรา */
+  --supp-soft: rgba(187, 154, 247, 0.11);
+  --real: #7dcfff;          /* หมายเหตุ: พฤติกรรมจริง */
+  --real-soft: rgba(125, 207, 255, 0.10);
+  --exam: #ff9e64;          /* ข้อสอบ / ข้อควรระวัง */
+  --exam-soft: rgba(255, 158, 100, 0.11);
+  --teal: #5ec4b6;
+  --teal-soft: rgba(94, 196, 182, 0.12);
+
+  /* ชนิดวิดเจ็ตใน tree */
+  --k-stateless: #8b93a3;
+  --k-stateful: #7aa2f7;
+  --k-provider: #5ec4b6;
+  --k-consumer: #e0af68;
+  --k-selector: #ff9e64;
+  --k-system: #bb9af7;
+  --k-element: #9ece6a;
+
+  /* code */
+  --code-bg: #15181f;
+  --c-kw: #bb9af7;
+  --c-type: #7dcfff;
+  --c-str: #9ece6a;
+  --c-num: #ff9e64;
+  --c-com: #636d83;
+  --c-ann: #e0af68;
+  --c-fn: #7aa2f7;
+  --c-punc: #a9b1c2;
+
+  --radius: 8px;
+  --radius-sm: 6px;
+  --gutter: 16px;
+  --read: 760px;
+  --wide: 1100px;
+  --sidebar: 280px;
+  --topbar: 52px;
+
+  --font: "Noto Sans Thai", "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", "Noto Sans Mono", "Liberation Mono", ui-monospace, monospace, "Noto Sans Thai";
+
+  --dur: 220ms;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; }
+  *, *::before, *::after { animation-duration: 0ms !important; transition-duration: 0ms !important; }
+}
